@@ -2,6 +2,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image';
+import styles from './page.module.css'
 
 export default function Home() {
   const handleButtonClick = (i) => {
@@ -27,8 +28,9 @@ export default function Home() {
                   alt="Info"
                   width={200}
                   height={100}
+                  className='rounded-circle'
                   />
-                  <span className='ms-4'>Info</span>
+                  <span className={`${styles.customText}`}>Info</span>
                 </div>
               )}
               {i === 1 && (
@@ -38,8 +40,9 @@ export default function Home() {
                     alt="Prishopp"
                     width={200}
                     height={100}
+                    className='rounded-circle'
                   />
-                  <span className="ms-4">Dagligvarer</span>
+                  <span className={`${styles.customText}`}>Dagligvarer</span>
                 </div>
               )}
               {i === 2 && (
@@ -49,8 +52,9 @@ export default function Home() {
                  alt="Prishopp"
                  width={200}
                  height={100}
+                 className='rounded-circle'
                  />      
-                 <span className="ms-4">Prishopp</span>
+                 <span className={`${styles.customText}`}>Prishopp</span>
                  </div>
               )}
               {i === 3 && (
@@ -60,8 +64,9 @@ export default function Home() {
                   alt="Prisfall"
                   width={200}
                   height={100}
+                  className='rounded-circle'
                   />
-                  <span className='ms-4'>Prisfall</span>
+                  <span className={`${styles.customText}`}>Prisfall</span>
                 </div>
               )}
               {i === 4 && (
@@ -71,8 +76,9 @@ export default function Home() {
                   alt="Kart"
                   width={200}
                   height={100}
+                  className='rounded-circle'
                   />
-                  <span className='ms-4'>Butikker i nærheten</span>
+                  <span className={`${styles.customText}`}>Butikker i nærheten</span>
                 </div>
               )}
               {i === 5 && (
@@ -82,8 +88,9 @@ export default function Home() {
                   alt="Matkasse"
                   width={200}
                   height={100}
+                  className='rounded-circle'
                   />
-                  <span className='ms-4'>Matkasse</span>
+                  <span className={`${styles.customText}`}>Matkasse</span>
                 </div>
               )}
             </button>
