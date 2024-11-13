@@ -1,54 +1,59 @@
 import { useState, useEffect } from 'react';
 
 export default function ProductList() {
-  const [products, setProducts] = useState([]); // For å lagre hentede produkter
-  const [loading, setLoading] = useState(true); // For å håndtere laste-tilstand
-  const [error, setError] = useState(null); // For å håndtere eventuelle feil
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
+    console.log("useEffect ran"); // Legg til denne linjen for å bekrefte at useEffect blir kalt.
+
     async function fetchProducts() {
       try {
-        // API-kall
-        const res = await fetch('/api/fetchProducts?search=lettmelk&sort=price_desc');
+        const res = await fetch('https://jsonplaceholder.typicode.com/posts');
         
-        // Hvis responsen ikke er OK, kast en feil
         if (!res.ok) {
-          throw new Error('Feil ved henting av data');
+          throw new Error('Feil ved henting av produkter');
         }
-        
+
         const data = await res.json();
-        setProducts(data); // Sett produktene
+        console.log('API Response:', data);
+
+        if (data && data.length > 0) {
+          setProduct(data[0]);
+        } else {
+          setError('Ingen produkter funnet');
+        }
       } catch (error) {
-        setError(error.message); // Hvis det er feil, sett feilmeldingen
+        console.error('Error fetching products:', error);
+        setError(error.message);
       } finally {
-        setLoading(false); // Sett loading til false uansett om det lykkes eller ikke
+        setLoading(false);
       }
     }
 
     fetchProducts();
-  }, []); // Bruk tomt array for å kjøre kallet én gang ved mount
+  }, []); 
 
-  // Hvis vi laster data, vis "Loading..."
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>Laster produkt...</div>;
   }
 
-  // Hvis det er en feil, vis feilmeldingen
   if (error) {
     return <div style={{ color: 'red' }}>Error: {error}</div>;
   }
 
-  // Når produktene er hentet, vis dem
   return (
     <div>
-      <h2>Produkter:</h2>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            {product.name} - {product.price} NOK
-          </li>
-        ))}
-      </ul>
+      <h2>Produkt:</h2>
+      {product ? (
+        <div>
+          <h3>{product.title}</h3>
+          <p>{product.body}</p>
+        </div>
+      ) : (
+        <p>Ingen produktdata tilgjengelig</p>
+      )}
     </div>
   );
 }
