@@ -1,4 +1,11 @@
 {
   "/page": "app/page.js",
-  "/_not-found/page": "app/_not-found/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/info/page": "app/info/page.js",
+  "/dagligvarer/page": "app/dagligvarer/page.js",
+  "/prishopp/page": "app/prishopp/page.js",
+  "/prisfall/page": "app/prisfall/page.js",
+  "/kart/page": "app/kart/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/matkasse/page": "app/matkasse/page.js"
 }

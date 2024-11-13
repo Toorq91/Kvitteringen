@@ -1,8 +1,7 @@
-// pages/info.js
-export default function InfoPage() {
+export default function MatkassePage() {
     return (
         <div className="container">
-            <h1>Velkommen til INFO siden!!</h1>
+            <h1>Velkommen til Matkasse siden!!</h1>
             <p>Dette er veldig viktig info!!</p>
         </div>
     );
