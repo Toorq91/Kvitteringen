@@ -1,7 +1,12 @@
 .customText {
-  font-size: 1.25rem;  /* Bigger text */
-  color: #FFD700;      /* Gold color */
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);  /* Text shadow */
-  font-weight: bold;   /* Bold text */
+  font-size: 1.25rem;  
+  color: #FFD700;      
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);  
+  font-weight: bold;  
   margin-left: 1.5rem;
+}
+
+.button {
+  width: 200px;
+  height: 100px;
 }

@@ -3,7 +3,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image';
-import styles from './styles/page.module.css';  // Styles for hovedsiden
+import styles from './styles/page.module.css'; 
 import ProductList from '../../components/productList';
 import Button from '../../components/Button';
 

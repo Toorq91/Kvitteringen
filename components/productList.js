@@ -6,7 +6,7 @@ export default function ProductList() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    console.log("useEffect ran"); // Legg til denne linjen for å bekrefte at useEffect blir kalt.
+    console.log("useEffect ran"); 
 
     async function fetchProducts() {
       try {

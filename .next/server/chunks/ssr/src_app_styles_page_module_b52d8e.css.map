@@ -2,6 +2,6 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/styles/page.module.css"],"sourcesContent":[".customText {\n  font-size: 1.25rem;  /* Bigger text */\n  color: #FFD700;      /* Gold color */\n  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);  /* Text shadow */\n  font-weight: bold;   /* Bold text */\n  margin-left: 1.5rem;\n}"],"names":[],"mappings":"AAAA"}},
-    {"offset": {"line": 8, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/styles/page.module.css"],"sourcesContent":[".customText {\n  font-size: 1.25rem;  \n  color: #FFD700;      \n  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);  \n  font-weight: bold;  \n  margin-left: 1.5rem;\n}\n\n.button {\n  width: 200px;\n  height: 100px;\n}"],"names":[],"mappings":"AAAA;;;;;;;;AAQA"}},
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
 }
