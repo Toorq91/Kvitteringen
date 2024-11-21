@@ -1,0 +1,32 @@
+Kode for pris sjekking av butikker med api
+Lage en nettside som tar for seg varer ifra alle norske butikker via deres API.
+Prisjekker disse opp imot hverandre.
+
+Bruke bare:
+nextJS
+bootstrap for css
+
+Bilder av matvarer.
+Pris på enhet + kg pris.
+søkefelt.
+
+Sidebar:
+Knapp på toppen som er navnet på nettsiden (tar deg til info side).
+Dagligvarer.
+prishopp.
+prisfall.
+Butikker på kart (bare hvis jeg har tid til dette). ????
+matkasser. ????
+
+Info side (kan ha knapp som tar deg til alle matvarer).
+
+Dagligvarer sidebar:
+Pris (fra - til)
+kategorier av matvarer.
+butikker.
+leverandører.
+allergener.
+næringsinnhold. (kalorier, fett, karbohydrater, kostfiber, protein, salt, sukker).
+
+
+
